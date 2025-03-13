@@ -1,4 +1,4 @@
-# Energy Consumption Estimation Script
+# Energy Consumption Linux
 
 This repository contains a Bash script that estimates the daily, monthly, and yearly energy consumption of your system based on hardware information and user-specified active hours. The script gathers system details using standard Linux utilities and applies usage coefficients to calculate estimated power usage in kilowatt-hours (kWh).
 
@@ -53,10 +53,12 @@ This repository contains a Bash script that estimates the daily, monthly, and ye
 
 Note: Running as sudo may be necessary since some commands (like dmidecode) require root privileges.
 
-Requirements  
+## Requirements  
 Operating System: Linux  
-Dependencies:  
+
+## Dependencies:  
 Ensure the following commands are installed:  
+```
 - lscpu  
 - lsblk  
 - dmidecode  
@@ -65,8 +67,8 @@ Ensure the following commands are installed:
 - free  
 - xrandr  
 - lsusb  
-
+```
 The script will notify you if any are missing and suggest installation commands.
 
-Disclaimer  
+## Disclaimer  
 The energy consumption estimations provided by this script are approximate. They are based on average hardware values and assumed usage patterns. Actual power consumption may vary depending on your system’s configuration and real-world usage.
