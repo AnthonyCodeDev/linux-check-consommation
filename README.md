@@ -30,9 +30,9 @@ Ensure the following commands are installed:
 - bc  
 - free  
 - xrandr  
-- lsusb  
+- usbutils  
 ```
-The script will notify you if any are missing and suggest installation commands.
+=> ``sudo apt update && sudo apt install util-linux dmidecode pciutils bc procps x11-xserver-utils usbutils``
 
 ---  
 
