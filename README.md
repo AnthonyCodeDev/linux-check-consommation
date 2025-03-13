@@ -4,6 +4,38 @@ This repository contains a Bash script that estimates the daily, monthly, and ye
 
 ---
 
+## Usage
+
+1. **Copy the Script:**  
+   Save the script (e.g., as `energy_estimation.sh`) to a location on your system.
+
+2. **Make it Executable:**
+   ```bash
+   chmod +x energy_estimation.sh
+3. **Run the Script:**
+`sudo ./energy_estimation.sh`
+
+Note: Running as sudo may be necessary since some commands (like dmidecode) require root privileges.
+
+## Requirements  
+Operating System: Linux  
+
+## Dependencies:  
+Ensure the following commands are installed:  
+```
+- lscpu  
+- lsblk  
+- dmidecode  
+- lspci  
+- bc  
+- free  
+- xrandr  
+- lsusb  
+```
+The script will notify you if any are missing and suggest installation commands.
+
+---  
+
 ## Features
 
 - **Dependency Check:**  
@@ -38,37 +70,7 @@ This repository contains a Bash script that estimates the daily, monthly, and ye
 - **Hardware Details:**  
   Outputs key hardware information such as the CPU model, GPU details, total RAM, SSD/HDD count, and connected USB devices.
 
----
-
-## Usage
-
-1. **Copy the Script:**  
-   Save the script (e.g., as `energy_estimation.sh`) to a location on your system.
-
-2. **Make it Executable:**
-   ```bash
-   chmod +x energy_estimation.sh
-3. **Run the Script:**
-`sudo ./energy_estimation.sh`
-
-Note: Running as sudo may be necessary since some commands (like dmidecode) require root privileges.
-
-## Requirements  
-Operating System: Linux  
-
-## Dependencies:  
-Ensure the following commands are installed:  
-```
-- lscpu  
-- lsblk  
-- dmidecode  
-- lspci  
-- bc  
-- free  
-- xrandr  
-- lsusb  
-```
-The script will notify you if any are missing and suggest installation commands.
+---  
 
 ## Disclaimer  
 The energy consumption estimations provided by this script are approximate. They are based on average hardware values and assumed usage patterns. Actual power consumption may vary depending on your system’s configuration and real-world usage.
